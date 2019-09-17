@@ -1,6 +1,6 @@
 name: Publish via Dispatch
 
-on: [repository_dispatch]
+on: [push, repository_dispatch]
 
 jobs:
   build:
