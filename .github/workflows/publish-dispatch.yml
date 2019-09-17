@@ -4,9 +4,7 @@ on: [repository_dispatch]
 
 jobs:
   build:
-    name: Repo2
     steps:
-      - name: Checkout
-        uses: actions/checkout@v1
-      - name: Echo
+      - uses: actions/checkout@v1
+      - name: Echo Hello World
         run: echo 'Hello World'
