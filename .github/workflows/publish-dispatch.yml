@@ -1,0 +1,12 @@
+name: Publish via Dispatch
+
+on: [repository_dispatch]
+
+jobs:
+  build:
+    name: Repo2
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: Echo
+        run: echo 'Hello World'
